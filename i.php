@@ -15,7 +15,6 @@
     $data['nexturl'] = $nexturl;
     return $data;
 }
-
 //抓取列表方法
 function spider($url,$page=0)
  {        
@@ -45,6 +44,7 @@ function spider($url,$page=0)
      fclose($myfile);             
      return $page+1;
  }
+ //url分页规则
  function urlpreg($url,$page){    
     $i = explode('-',$url);
     $tmp = $i;
