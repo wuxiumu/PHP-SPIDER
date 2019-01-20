@@ -84,7 +84,7 @@ PHP 编写基础
    $htmlOneLine = preg_replace("/\r|\n|\t/","",$html);
 
    // 通过 preg_match 函数提取获取页面的标题信息
-   preg_match("/<title>(.*)<\/title>/iU",$htmlOne,$titleArr);
+   preg_match("/<title>(.*)<\/title>/iU",$htmlOneLine,$titleArr);
 
    // 由于 preg_match 函数的结果是数组的形式
    $title = $titleArr[1];
